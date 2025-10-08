@@ -1,0 +1,85 @@
+:root {
+    --primaryColor: green;
+    --errorColor: orange;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-color: white;
+}
+
+#wrapper {
+    width: 420px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputGroup {
+    padding: 8px 12px;
+}
+
+.inputGroup label {
+    display: block;
+    padding: 12px 0;
+}
+
+.inputGroup input {
+    display: block;
+    width: 93%;
+    padding: 12px;
+    border: 2px solid #e2e2e2;
+    font-size: 16px;
+}
+
+.inputGroup input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+/* .valid와 .invalid는 자바스크립트로 설정할 클래스 */
+.inputGroup .valid input {
+    border-color: var(--primaryColor);
+}
+
+.inputGroup .invalid input {
+    border-color: var(--errorColor);
+    visibility: visible;
+}
+
+.inputGroup .helperText {
+    display: block;
+    padding-top: 8px;
+}
+
+.inputGroup .valid .helperText {
+    visibility: hidden;
+}
+
+.inputGroup .invalid .helperText {
+    color: var(--errorColor);
+}
+
+#wrapper button {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    background-color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    color: white;
+    cursor: pointer;
+}
