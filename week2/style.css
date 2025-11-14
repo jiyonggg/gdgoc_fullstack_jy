@@ -49,11 +49,12 @@ h2 {
 }
 
 /* .valid와 .invalid는 자바스크립트로 설정할 클래스 */
-.inputGroup .valid input {
+/* 11.14 추가) .inputGroup이랑 .valid나 .invalid 사이에 공백 없어야 합니다.. */
+.inputGroup.valid input {
     border-color: var(--primaryColor);
 }
 
-.inputGroup .invalid input {
+.inputGroup.invalid input {
     border-color: var(--errorColor);
     visibility: visible;
 }
@@ -63,11 +64,11 @@ h2 {
     padding-top: 8px;
 }
 
-.inputGroup .valid .helperText {
+.inputGroup.valid .helperText {
     visibility: hidden;
 }
 
-.inputGroup .invalid .helperText {
+.inputGroup.invalid .helperText {
     color: var(--errorColor);
 }
 
