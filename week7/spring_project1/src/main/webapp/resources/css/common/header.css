@@ -1,0 +1,15 @@
+* {
+    /* 항상 마진, 패딩 0으로 시작 */
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    height: 30px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
